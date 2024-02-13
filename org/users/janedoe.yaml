@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: janedoe
+  namespace: aiprt
+  tags:
+    - engineer
+spec:
+  profile:
+    displayName: Jane Doe
+    email: janedoe@dpd.gov
+    picture: https://media.licdn.com/dms/image/C4E03AQGf7HbniXtkYA/profile-displayphoto-shrink_800_800/0/1583536197740?e=1698278400&v=beta&t=f-2N_Eva4UJWz2YT4S6Rygi_iC3jMM5z8BP4tG9vpuU
+  memberOf:
+    - aiprt-team

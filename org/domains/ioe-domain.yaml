@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: ioe-domain
+  namespace: ioe
+  description: IOE Domain
+spec:
+  owner: dpd

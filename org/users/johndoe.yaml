@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: johndoe
+  namespace: aiprt
+  tags:
+    - engineer
+spec:
+  profile:
+    displayName: John Doe
+    email: johndoe@dpd.gov
+    picture: https://media.licdn.com/dms/image/C4E03AQF0T37bWVu4fg/profile-displayphoto-shrink_800_800/0/1517453090128?e=1698278400&v=beta&t=sNvKKZAarQ-LeGYeCT-l3m-ZgSi14Z4JS4D8WTtkd_Y
+  memberOf:
+    - aiprt-team

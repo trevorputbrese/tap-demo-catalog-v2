@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: aiprt-team
+  namespace: aiprt
+  description: aiprt
+spec:
+  type: Team
+  profile:
+    displayName: dpd aiprt
+  parent: dpd
+  children: []
+  members:
+    - johndoe
+    - janedoe
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: aiprt-team-members
+spec:
+  targets:
+    - ../users/johndoe.yaml
+    - ../users/janedoe.yaml

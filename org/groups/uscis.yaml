@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: dpd
+  namespace: aiprt
+  description: U.S. Data Privacy Division
+  links:
+    - url: https://www.dpd.gov/about-us
+      title: U.S. Data Privacy Division
+spec:
+  type: group
+  profile:
+    displayName: U.S. Data Privacy Division
+    email: contact@dpd.gov
+  parent: det
+  children:
+    - aiprt-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: dpd-teams
+  namespace: aiprt
+spec:
+  targets:
+    - ../teams/aiprt.yaml
